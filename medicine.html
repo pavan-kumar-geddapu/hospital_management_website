@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Medicines</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://macdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style type="text/css">
+input[type=search]
+{
+	background-color:white;
+	border: 1px solid black;
+	font-size: 25px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+#uni
+{
+	width:40px;
+	height: 33px;
+	position: absolute;
+	top: 8px;
+  background-color: rgb(0,176,240);
+  border:2px solid rgb(0,176,240);
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+div.gallery {
+  border: 1px solid #ccc;
+  margin: 6px;
+  float: left;
+  width: 180px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  width: 170px;
+  transform:scale(1.1);
+  z-index:1;
+}
+
+div.gallery img {
+  width: 100%;
+  height:130px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border:2px solid black;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size:25px;
+  color: black;
+  background-color:white;
+}
+#image
+{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  margin-left: 50px;
+  border-radius: 50%;
+  border:2px solid rgb(0,176,240);
+}
+p
+{
+  position: absolute;
+  top: 50px;
+  left: 400px;
+
+}
+body
+{
+  background-size: 1200px 1000px;
+}
+td,th
+{
+  font-size: 25px;
+  text-align: left;
+}
+input,select,textarea
+{
+  background-color: #f2f2f2;
+}
+</style>
+<body background="ms.jpg" align="center"><p style="font-variant: small-caps;font-size: 30px;color:white;font-weight:10px;">Doctor prescribed tablets</p>
+<center><input type="search" placeholder="What is your problem sir?" size="20"><button id="uni"><i class="fas fa-search"></i></button><br><img src="doctor.jpg" width="150" height="150" id="image"></center><br><br><br><br><br><br><br><div class="gallery"><a target="_blank" href="tablet1.jpg" ><img src="tablet1.jpg" alt="headset" width="600" height="400"></a><div class="desc">&#8377;<del>50</del>40/strip<br>Gebapentin<br><button style="width: 100%;height:40px;color:black;background-color:rgb(0,176,240);border:none;" onclick="tablet(1)">BUY</button></div></div><div class="gallery"><a target="_blank" href="tablet2.jfif"><img src="tablet2.jfif" alt="pouch" width="600" height="400"></a><div class="desc">&#8377;<del>550</del>350/box<br>Metaformin<br><button style="width: 100%;height:40px;color:black;background-color:rgb(0,176,240);border:none;" onclick="tablet(2)">BUY</button></div></div><div class="gallery"><a target="_blank" href="tablet3.jfif"><img src="tablet3.jfif" alt="chargers" width="600" height="400"></a><div class="desc">&#8377;<del>200</del>100/box<br>Aspirin<br><button style="width: 100%;height:40px;color:black;background-color:rgb(0,176,240);border:none;" onclick="tablet(3)">BUY</button></div></div><div class="gallery"><a target="_blank" href="tablet4.jfif"><img src="tablet4.jfif" alt="chargers" width="600" height="400"></a><div class="desc">&#8377;<del>750</del>650/box<br>Paracetemol<br><button style="width: 100%;height:40px;color:black;background-color:rgb(0,176,240);border:none;" onclick="tablet(4)">BUY</button></div></div><div class="gallery"><a target="_blank" href="tablet5.jpg"><img src="tablet5.jpg" alt="chargers" width="600" height="400"></a><div class="desc">&#8377;<del>150</del>90/strip<br>Acetomenaphin<br><button style="width: 100%;height:40px;color:black;background-color:rgb(0,176,240);border:none;">BUY</button></div></div><div class="gallery"><a target="_blank" href="tablet6.jpg"><img src="tablet6.jpg" alt="chargers" width="600" height="400"></a><div class="desc">&#8377;<del>550</del>350/box<br>DH<br><button style="width: 100%;height:40px;color:black;background-color:rgb(0,176,240);border:none;">BUY</button></div></div><br><br><br><br><br><br><br><br><br><br><br><center>
+<form><br><br><br><br><br><br><fieldset style="width:400px;background-color:white;"><table><tr><th>Name</th><td><input type="text" name=""></td></tr><tr><th>Email</th><td><input type="email" name="" placeholder="optional"></td></tr><tr><th>Phone</th><td><input type="number" name=""></td></tr><tr><th>Place</th><td><textarea rows="4" cols="19"></textarea></td></tr><tr><th>Age</th><td><input type="number" name=""></td></tr><tr><th>Gender</th><td><input type="radio" name="gender" value="male">Male  <input type="radio" name="gender" value="female">Female</td></tr><tr><th>Problem</th><td><select><option>Allergies</option><option>Artheritis</option><option>Asthma</option><option>Bladder Cancer</option><option>Blood Poisoining</option><option>Bone Cancer</option><option>Brain Tumors</option><option>Breast Cancer(female)</option><option>Breast Cancer(male)</option><option>Lungs Infection</option><option>Chest Infection</option><option>Chest Pain</option><option>Chicken Pox</option><option>Cold</option><option>Conjunctivitis</option><option>Constipation</option><option>Cough</option><option>Dehydration</option><option>Diabetes</option><option>Diarrhoea</option><option>Dizzyness</option><option>Earache</option><option>Eye Cancer</option><option>Fever</option><option>Flu</option><option>Food Poisoning</option><option>Headache</option><option>Hearing problems</option><option>HIV</option><option>Indigestion</option><option>Itching</option><option>Kidney Cancer</option><option>Kidney Stones</option><option>Kidney Infection</option><option>LIver Cancer</option><option>Malaria</option><option>Measles</option><option>Obesity</option><option>Scabies</option><option>Tooth Decay</option><option>UTI</option><option>Vomiting</option></select></td></tr></table><button style="background-color: rgb(0,176,240);border:2px solid rgb(0,176,240);width: 100%;height:35px;border-radius: 10px;outline: none;">SUBMIT</button></fieldset></form></center>
+<p id="p" style="top:900px;left:500px;width:200px;height:300px;border:3px solid rgb(0,176,240);background-color: white;margin: auto;" align="center"><b>Your Bill</b><strong id="cost" style="float:bottom"></strong><br></p>
+<script type="text/javascript">
+  function tablet(a)
+  {
+    var total=0;
+    if(a==1)
+    {
+      var ge=40;
+      total=total+ge;
+
+ var node = document.createElement("tr");
+  var textnode = document.createTextNode("Gebapentin="+ge+"/-");
+  node.appendChild(textnode);
+  document.getElementById("p").appendChild(node);
+
+    }
+    if(a==2)
+    {
+      var me=350;
+      total=total+me;
+
+ var node = document.createElement("tr");
+  var textnode = document.createTextNode("Metaformin="+me+"/-");
+  node.appendChild(textnode);
+  document.getElementById("p").appendChild(node);
+
+    }
+   if(a==3)
+    {
+      var ae=40;
+      total=total+ae;
+
+ var node = document.createElement("tr");
+  var textnode = document.createTextNode("Aspirin="+ae+"/-");
+  node.appendChild(textnode);
+  document.getElementById("p").appendChild(node);
+
+    }
+
+    
+  }
+
+</script><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

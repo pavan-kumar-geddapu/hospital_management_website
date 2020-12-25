@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex:50%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+a:link,a:visited
+{
+  text-decoration: none;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+img
+{
+  heigt: 250px;
+}
+</style>
+<body>
+<div class="row"> 
+  <div class="column">
+    <img src="g10.jfif" style="width:100%">
+    <img src="g11.jfif" style="width:100%">
+    <img src="g12.jpg" style="width:100%">
+    <img src="g1.jfif" style="width:100%">
+    <img src="g2.jfif" style="width:100%">
+    <img src="g3.jfif" style="width:100%">
+    <img src="g4.jfif" style="width:100%">
+  </div>
+  
+  <div class="column">
+    <img src="g5.jpg" style="width:100%">
+    <img src="g6.jfif" style="width:100%">
+    <img src="g7.jfif" style="width:100%">
+    <img src="g8.jpg" style="width:100%">
+    <img src="g9.jfif" style="width:80%">
+  </div> 
+   
+  </div>
+   <a href="https://www.google.com/search?q=gmr+hospital+popular+photos&sxsrf=ACYBGNSr7JhuncfXYmhZr-M8XRRCpUAPgQ:1577348377919&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi63ILO8NLmAhWOzDgGHa4uB0sQ_AUoAnoECAsQBA&biw=1396&bih=657" style="float:right;" target="_blank"><button>More</button></a>
+</body>
+</html>

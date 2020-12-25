@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GMR HOSPITAL</title>
+	<link rel="stylesheet" href="https://macdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<style type="text/css">
+	#sat
+	{
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		width: 60px;
+		height: 30px;
+		outline: none;
+		text-align: center;
+		padding-top: 10px;
+		background-color: rgb(0,176,240);
+		color: white;
+        border-radius: 10px;
+       border:2px solid rgb(0,176,240);
+	}
+	#normal
+	{
+		position: absolute;
+		top: 20px;
+		right: 80px;
+		width: 60px;
+		height: 30px;
+		outline: none;
+		text-align: center;
+		padding-top: 10px;
+		background-color: rgb(0,176,240);
+		color: white;
+        border-radius: 10px;
+       border:2px solid rgb(0,176,240);
+	}
+</style>
+<body style="margin: 0;">
+<img src="gmrlocate.png" width="60%" height="450" id="map" style="float: right;"><button onclick="satellite(1)" id="normal">Normal</button><button id="sat" onclick="satellite(-1)">Satellite</button><br><br><br><i class="fa fa-map-marker" style="font-size: 30px;color: red;text-align: center;margin: 5px 200px;"></i><address style="float: left;text-align: center;margin:10px 100px;"><b>GMR Varalakshmi Care Hospital</b><br>GMR Nagar,Razam<br>Srikakulam district,<br>Andhra Pradesh-532127.</address><br><br><br><br><br><br><br><i class="fas fa-home" style="font-size:20px;margin-left:80px;margin-top: 10px;"></i> Ph:7032816723<br><i class="fas fa-phone" style="font-size:20px;margin-left:80px;margin-top: 10px;"></i> 1800 425 1835:1800 425 1836<br><i class="fas fa-envelope" style="font-size:20px;margin-left:80px;margin-top: 10px;"></i> <a href="http://gmrcarehospitals.in/contact.html" target="_blank">contact@gmrhospitals.in</a>
+<script type="text/javascript">
+function satellite(a)
+{
+	if(a==-1){
+		pic="gmrslocate.png";
+	}
+   if (a==1) {
+   	pic="gmrlocate.png";
+   }
+ document.getElementById('map').src=pic;
+
+}
+	
+
+</script>
+</body>
+</html>

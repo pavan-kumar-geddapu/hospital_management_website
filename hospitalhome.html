@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hospitallogin</title>
+<link rel="icon" type="image/gif" sizes="100x100">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="f:\prop1form.css">
+</head>
+<style>
+fieldset
+{
+	position: absolute;
+	left: 550px;
+	top:125px; 
+	background-color:#f2f2f2;
+	border: 1px solid black;
+	width: 400px;
+	height:300px;
+	margin-top: 10px;
+}
+label
+{
+ font-family: verdana;
+ font-size: 20px;
+}	
+input[type=text]
+{
+  font-size:15px;
+  border: 1px solid black;
+}
+a:link,a:visited
+{
+	text-decoration: none;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+i
+{
+	font-size:15px;
+}
+input[type=button]
+{
+	background-color: rgb(0,176,240);
+	border:2px solid rgb(0,176,240);
+}
+input[type=reset]
+{
+	background-color: rgb(0,176,240);
+	border:2px solid rgb(0,176,240);
+}
+body
+{
+	background-repeat: no-repeat;
+}
+</style>
+<body background="gmrh1.jpg" style="height:100%;background-size:cover;"><pre><marquee><h1 style="color:white;">Welcome to GMR Varalakshmi Care Hospital</h1></marquee></center><form onsubmit="validateform()"><fieldset id="form">                                                <a href="file:///H:/bimenuz/signuph.html">Signup</a><br><br>     <label>Email</label>          <i class="fas fa-envelope"></i><input type="email" placeholder="email" id="email" minlength="10" maxlength="30" autofocus><br><br><br>     <label>Phone</label>         <i class="fas fa-phone"></i><input type="number" name="phoneno" placeholder="phoneno" maxlength="10" id="phone"><br><br><br>     <label>Password</label>    <i class="fas fa-key"></i><input type="Password" id="pwd"><br><br><br>        <input type="reset" value="RESET">                <input type="submit" value="LOGIN"><br><br>         <b>continue with</b><br><br>            <i class="fa fa-google" style="color: red;"></i>   <i class="fa fa-facebook" style="color:midnightblue;"></i></fieldset></form>
+<script type="text/javascript">
+	function validateform()
+   {
+   	var y=document.getElementById('phone').value;
+   	if (isNaN(y)) {
+     alert('Please enter number only');
+     return false;
+   	}
+   	if(y.length<10||y.length>10)
+   	{
+   		alert('please enter 10 digit number');
+   		return false;
+   	}
+   	if (y=="") {
+   		alert('please enter number');
+   		return false;
+   	}
+   	var z=document.getElementById('email').value;
+   	if (z=="") {
+   	    alert('Please enter a email');
+   	    return false;
+
+   	}
+     var x=document.getElementById('pwd').value;
+     if (x=="") {
+     	alert('please enter password');
+     	return false;
+     }
+   }
+
+</script>
+
+
+</form>
+</body>
+</html>

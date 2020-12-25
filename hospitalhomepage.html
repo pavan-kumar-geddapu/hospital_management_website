@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/gif" href="gmr3.png" sizes="100*100">
+	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>GMR Hospitals</title>
+</head>
+<style type="text/css">
+	body
+	{
+		background-color: #f2f2f2;
+	}
+.header
+{
+	background-color:#00bfff;
+	width: 100%;
+	height: 110px;
+	position: sticky;
+	position: fixed;
+	backgroun-image: linear-grdient(to bottom right,#99e6ff,#00ace6);
+  z-index: 1;
+}
+.column1
+{
+	float: left;
+	width: 450px;
+}
+.column1 i
+{
+	color:#339966;
+}
+.column1 button
+{
+	 display: inline-block;
+  padding: 10px 10px;
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color:black;
+  background-color:white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 5px #999;
+  margin:10px;
+}
+.column1 button:hover
+{
+	background-color:#006699;
+	color:white;
+}
+.column1 button:active
+{
+	background-color:rgb(0,176,240);
+  box-shadow: 0 2px powderblue;
+  transform: translateY(4px);
+  color: white;
+}
+li
+{
+	list-style-type: none;
+	width:120px;
+	height:30px;
+	color:black;
+	border-bottom:2px solid midnightblue;
+	background-color: white;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 5px;
+	float: left;
+}
+ul
+{
+	margin:0 120px;
+	list-style-type: none;
+	poition: fixed;
+}
+li:hover
+{
+	background-color:midnightblue;
+	color:white;
+}
+a:hover
+{
+	color: white;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  width: 100px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+#dropdown
+{
+	margin-left: 0px;
+	padding-left: 0px;
+}
+#tdrop>td
+{
+ width: 150px;
+ height: 20px;
+}
+#tdrop>td:hover
+{
+	background-color:rgb(0,176,240);
+	width: 150px;
+	height: 20px;
+}
+td>a:link,a:visited
+{
+	text-decoration: none;
+	
+}
+td>a:hover
+{
+	text-decoration:underline;
+	text-decoration-color:black;
+
+}
+span
+{
+position:relative;
+z-index: 0;
+}
+span:hover
+{
+	color: rgb(0,176,240);
+}
+body
+{
+	background-color:#e6e600;
+	background-size: 100px 100px;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-bled-mode: lighten;
+}
+li.scat
+{
+	border:none;
+	background-color: white;
+	color: black;
+	height: 35px;
+}
+li.scat:hover
+{
+	background-color: midnightblue;
+	color: white;
+}
+a:link,a:visited
+{
+	text-decoration: none;
+}
+li:hover>span
+{
+	color: white;
+}
+</style>
+<body style="margin: 0" background="e:\bleave4.png">
+<header class="header">
+<div class="column1"><img src="g:\gmr3.png" width="100" height="100" style="border:1px dashed #0099cc;border-radius:50%;box-shadow:2px 6px #999;"></div>
+<div class="column1" style="width:600px;"><h1 style="font-variant: small-caps;color:midnightblue;text-shadw: 2px 0.5px #999;">GMR VARALAKSHMI CARE HOSPITAL</h1><center><i class="fas fa-cannabis"></i><font color="white">We Care More Than You Care</font><i class="fas fa-cannabis"></i></center></div><div class="column1"><br><br><br><a href="signuph.html" target="frame1" style="text-decoration: none;"><button>SIGNUP</button></a><a href="hospitalhome.html" target="frame1"><button>LOGIN</button></a></div></header><ul style="text-align: center;"><br><br><br><br><br><br><a href="home.html" target="frame1"><li>Home</li></a><a href="aboutus.html" target="frame1"><li>About us</li></a><li><div class="dropdown"><span><a href="specialities.html" target="frame1" style="color: black;">Specialities</a></span><div class="dropdown-content"><table style="margin: 0;" id="tdrop"><tr><td><a style="color:black;" href="http://gmrcarehospitals.in/RegularOps.html" target="frame1">Regular OP'S</a></td></tr><tr><td><a style="color:black;" href="http://gmrcarehospitals.in/RegularOps.html" target="frame1">Weekly OP'S</a></td></tr></table></div></div></li></a><a href="hprofile.html" target="frame1"><li>Profile</li></a><a href="hservice.html" target="frame1"><li><div class="dropdown"><span>Services</span><div class="dropdown-content" style="width: 400px;height:300px;"><font color="black">Quick View</font><br><table ><tr id="scat"><td style="width:200px;height:280px;">
+<li onmouseover="sercat(1)" class="scat" onclick="serframe(1)">24/7 CriticalCare</li></a>
+<li onmouseover="sercat(2)" class="scat" onclick="serframe(2)">Physiotherapy</li></a>
+<li onmouseover="sercat(4)" class="scat" onclick="serframe(3)">Diabetology Clinic</li></a>
+<li onmouseover="sercat(5)" class="scat" onclick="serframe(4)">Dialysis</li></a>
+<li onmouseover="sercat(6)" class="scat" onclick="serframe(5)">Clinical Laboratory</li></a>
+</ul></td>
+<td style="width:200px;height: 280px;"><img src="cc1.jfif" id="simage" width="190" height="190"></td></tr></table>
+</div></div></li></a><a href="facilities.html" target="frame1"><li>Facilities</li></a><a href="medicine.html" target="frame1"><li>Medicines</li></a><a href="appointment.html" target="frame1"><li>Appointments</li></a>
+<a href="gallery.html" target="frame1"><li>Gallery</li></a><a href="contactus.html" target="frame1"><li>Contact us</li></a></ul><br><iframe src="home.html" name="frame1" style="width:1200px;height:3000px;margin:0 158px;background-color: white;border:2px solid rgb(0,176,240);border-top: none;" id="idframe1" ></iframe>
+  </div>
+</div>
+<script type="text/javascript">
+	
+	function sercat(a)
+	{
+		var pic;
+      if (a==1) {
+      	pic="cc1.jfif"
+      }
+      	if (a==2) {
+      		pic="physio.jfif"
+      	}
+      		if (a==3) {
+          pic="blood.jfif"
+      		}
+      			if (a==4) {
+      				pic="dc.jpg"
+      			}
+      				if (a==5) {
+      					pic="dialysis.jpg"
+      				}
+      					if (a==6) {
+                          pic="cl.jpg"
+      					}
+      						if (a==7) {
+      							pic="rad.jpg"
+      						}
+      							document.getElementById('simage').src=pic;
+	}
+	function serframe(b)
+	{
+		var pics;
+		 if (b==1) {
+      	pics="service1.html"
+      }
+      	if (b==2) {
+      		pics="service2.html"
+      	}
+      		if (b==3) {
+          pics="service3.html"
+      		}
+      			if (b==4) {
+      				pics="service4.html"
+      			}
+      				if (b==5) {
+      					pics="service5.html"
+      				}
+
+      		document.getElementByName('frame1').src=pics;		
+      				
+	}
+</script>
+</html>
