@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>GMR Care Hospital</title>
+
+    <style>
+      .services_list_container {
+        margin: 20px 20px 20px 20px;
+      }
+      .services_container {
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+        margin: 20px 20px 20px 20px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      }
+      .services_container h2 {
+        margin-bottom: 20px;
+      }
+      .services_container p {
+        text-align: left;
+      }
+      .row {
+        margin: 0;
+      }
+    </style>
+
+<script>
+  window.onload = function() {
+    make_active('critical_care');
+  };
+</script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">GMR Care Hospital</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facilities.html">Facilities</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="services.html">Services <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="medicines.html">Medicine</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signIn.html">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signUp.html">Sign Up</a>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="services_list_container">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" onclick="make_active('critical_care')">24/7 Critical Care</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="make_active('physiotherapy')">Physiotherapy</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="make_active('blood_bank')">Blood Bank</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="make_active('diabetology_clinic')">Diabetology Clinic</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="make_active('dialysis')">Dialysis</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div id="critical_care" class="services_container">
+          <h2>24/7 Critical Care</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded float-left img-thumbnail" src="img/critical_care.jfif">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                Criticalcare is a medicine or intensive-care medicine, a branch of medicine concerned with life support for critically ill patients. A critical illness or injury acutely impairs one or more vital organ systems such that there is a high probability of imminent or life threatening deterioration in the patient’s condition. It involves decision making of high complexity to assess, manipulate, and support vital organ system failure and/or to prevent further life threatening deterioration of the patient's condition. Examples of vital organ system failure include, but are not limited to: central nervous system failure, circulatory failure, shock, renal, hepatic, metabolic, and/or respiratory failure.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="physiotherapy" class="services_container">
+          <h2>Physiotherapy</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded float-left img-thumbnail" src="img/physiotherapy.png">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                Physiotherapy is a health care profession that remediates impairments and promotes mobility, function, and quality of life through examination, diagnosis, and physical intervention. It is carried out by physical therapists. In our setting, physical therapy services may be provided alongside, or in conjunction with, other medical or rehabilitation services.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="blood_bank" class="services_container">
+          <h2>Blood Bank</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded float-left img-thumbnail" src="img/blood_bank.png">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                Blood bank is one of the recent additions to many unique things in a rural Hospital and has provision for components. In addition to whole blood one can also get components like platelet concentrate, red blood cells, fresh frozen plasma. This facility is very handy for patients undergoing various surgeries in the Hospital as the nearest blood bank is 40 Kms away. Those who have experienced the joy of giving, known for sure, that is an eternal spring. It costs nothing & is still priceless jewel, the value of which can only be known by either the hand that gives or the hand that receives. Our licensed blood bank ensures the critical provisioning of blood and blood components that are collected, typed and screened for HIV, HBsAG, HCV, Malaria and Syphilis; for both inhouse and outside patients.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="diabetology_clinic" class="services_container">
+          <h2>Diabetology Clinic</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded float-left img-thumbnail" src="img/diabetology_clinic.jpg">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                Diabetology clinic is a standalone facility which was inaugurated on 18-Sep-2015. Here a complete care for diabetes is done, it is equipped with full time diabetologist with diet and patient consular. For all the wound care and dressings technician is provided. All the data pertaining to the patient is stored locally in the systems provided with the consultant,dietician, counsellor, technician and PRE.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="dialysis" class="services_container">
+          <h2>Dialysis</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded float-left img-thumbnail" src="img/dialysis.jpg">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                Dialysis unit was inaugurated on 12-Jan-2015. We have installed 03 dialysis equipment to cater the needs of heamo dialysis patients in and around Rajam. It is run with a full time nephrologist, dialysis technicians and supported by nursing team to run the facility for 12 hours daily. The facility is helping six patients daily on an average.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+      function make_active(service_id) {
+        var critical_care = document.getElementById("critical_care");
+        var physiotherapy = document.getElementById("physiotherapy");
+        var blood_bank = document.getElementById("blood_bank");
+        var diabetology_clinic = document.getElementById("diabetology_clinic");
+        var dialysis = document.getElementById("dialysis");
+
+        critical_care.style.display = "none";
+        physiotherapy.style.display = "none";
+        blood_bank.style.display = "none";
+        diabetology_clinic.style.display = "none";
+        dialysis.style.display = "none";
+
+        if(service_id.localeCompare("critical_care") == 0) {
+          critical_care.style.display = "block";
+        }
+        else if(service_id.localeCompare("physiotherapy") == 0) {
+          physiotherapy.style.display = "block";
+        }
+        else if(service_id.localeCompare("blood_bank") == 0) {
+          blood_bank.style.display = "block";
+        }
+        else if(service_id.localeCompare("diabetology_clinic") == 0) {
+          diabetology_clinic.style.display = "block";
+        }
+        else if(service_id.localeCompare("dialysis") == 0) {
+          dialysis.style.display = "block";
+        }
+      }
+    </script>
+  </body>
+</html>

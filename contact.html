@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href = "https://fonts.googleapis.com/icon?family=Material+Icons" rel = "stylesheet">
+
+    <title>GMR Care Hospital</title>
+
+    <style>
+      .contact_container {
+        box-sizing: border-box;
+        text-align: center;
+        padding: 20px 20px 20px 20px;
+        margin: 30px 30px 30px 30px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+
+      .map_container {
+        box-sizing: border-box;
+        position: relative;
+        margin: 30px 30px 30px 30px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      .map_img {
+        width: 100%;
+        height: auto;
+      }
+      .row {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">GMR Care Hospital</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="facilities.html">Facilities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="medicines.html">Medicine</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact  <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signIn.html">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signUp.html">Sign Up</a>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="contact_container">
+          <i class = "material-icons " style="size: 30px; margin-bottom: 20px;">location_on</i>
+          <h4>GMR Varalakshmi Care Hospital</h4>
+          <i>GMR Nagar,Razam</i> <br>
+          <i>Srikakulam district,</i> <br>
+          <i>Andhra Pradesh-532127.</i> <br>
+          <br>
+          <br>
+          <i class = "material-icons " style="size: 30px; margin-bottom: 20px;">home</i> <b>Phone: </b><i>7032816723</i><br>
+          <i class = "material-icons " style="size: 30px; margin-bottom: 20px;">perm_phone_msg</i> <i>1800 425 1835:1800 425 1836</i><br>
+          <i class = "material-icons " style="size: 30px; margin-bottom: 20px;">drafts</i> <a href="http://gmrcarehospitals.in/contact.html" target="_blank">contact@gmrhospitals.in</a>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="map_container">
+          <button type="button" class="btn btn-warning" style="position: absolute; left: 5px; top: 5px;" onclick="pic_map_image('normal')">Normal</button>
+          <button type="button" class="btn btn-dark" style="position: absolute; right: 5px; top: 5px;" onclick="pic_map_image('satellite')">Satellite</button>
+          <img id="map_image" class="map_img" src="img/gmrlocate.png">
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script>
+      function pic_map_image(map_type){
+        if(map_type.localeCompare("normal") == 0) {
+          document.getElementById("map_image").src = "img/gmrlocate.png";
+        }
+        else if(map_type.localeCompare("satellite") == 0) {
+          document.getElementById("map_image").src = "img/gmrslocate.png";
+        }
+      }
+    </script>
+  
+  </body>
+</html>

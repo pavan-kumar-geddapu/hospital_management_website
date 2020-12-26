@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>GMR Care Hospital</title>
+
+    <style>
+      .facilites_list_container {
+        margin: 20px 20px 20px 20px;
+      }
+      .facilities_container {
+        text-align: center;
+        padding: 20px 10px 20px 10px;
+        margin: 20px 20px 20px 20px;
+        border-radius: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      }
+      .facilities_container h2 {
+        margin-bottom: 20px;
+      }
+      .facilities_container p {
+        text-align: left;
+      }
+      .facility_img {
+        margin: 0px 20px 0px 20px;
+        width: 100%;
+        height: auto;
+      }
+      .row {
+        margin: 0;
+      }
+    </style>
+
+    <script>
+      window.onload = function() {
+        load_accomadation();
+      };
+    </script>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">GMR Care Hospital</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutUs.html">About us</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="facilities.html">Facilities <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="medicines.html">Medicine</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signIn.html">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="signUp.html">Sign Up</a>
+          </li> 
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="facilites_list_container">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" onclick="load_accomadation()">Accomodation</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="load_ambulance()">Ambulance</a>
+            <a href="#" class="list-group-item list-group-item-action" onclick="load_canteen()">Canteen</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-9">
+        <div id="accomadation_container" class="facilities_container">
+          <h2>Accomadation</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded float-left img-thumbnail" src="img/accomadation.png">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                Accommodation and full-time care of a succession of inpatients and is situated in wards or a part of the hospital where continuous medical care for inpatients is provided. The total of such beds constitutes the normally available bed complement of the hospital. Counts of available hospital beds exclude cots for neonates, day care beds, provisional and temporary beds, beds in storerooms, and beds for special purposes such as dialysis or delivery. The OECD Health Data currently avoids the term “hospital beds” and uses the term “in-patient beds”.
+              </p>
+              <a type="button" class="btn btn-outline-dark" href="bookAccomadation.html">Book a Room</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="ambulance_container" class="facilities_container">
+          <h2>Ambulance</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded float-left img-thumbnail" src="img/ambulance.png">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                GMR Varalakshmi Care Hospital offers 24x7 Ambulance Facility comprising of two ambulances. One is state-of-the-art advanced care ambulance and other is the basic ambulance. Advanced care ambulance, meant for transportation of unstable patients, is equipped with defibrillator, multipara monitor, ventilator, oxygen, suction, scoop stretcher, spine board, head immobilizer, spencer trolley stretcher, emergency drugs etc. This ambulance is manned by ACLS / BLS trained doctors, nurses along with trained drivers and attendants. Basic ambulance, equipped with oxygen, is meant for transportation of stable patients. It is manned by skilled attendants and drivers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="canteen_container" class="facilities_container">
+          <h2>Canteen</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <img class="rounded float-left img-thumbnail" src="img/canteen.jpg">
+            </div>
+            <div class="col-sm-8">
+              <p>
+                The hospital Canteen is located in the hospital to serve the patients, attendants and visitors. The hygienic food served in the canteen at affordable rates is found very useful for all those receiving Healthcare services from the Hospital. The canteen is open for services between 5.30 AM and 9.30 PM. GMR Varalakshmi CARE Hospital has a well equipped canteen which is designed to serve wholesome and hygienic meals to our patients and attendants. Our canteen uses the best equipment and minimizes human contact with food items for the highest levels of hygiene.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script>
+      function load_accomadation() {
+        var x = document.getElementById("accomadation_container");
+        var y = document.getElementById("ambulance_container");
+        var z = document.getElementById("canteen_container");
+        
+        x.style.display = "block";
+        y.style.display = "none";
+        z.style.display = "none";
+      }
+      function load_ambulance() {
+        var x = document.getElementById("accomadation_container");
+        var y = document.getElementById("ambulance_container");
+        var z = document.getElementById("canteen_container");
+        
+        x.style.display = "none";
+        y.style.display = "block";
+        z.style.display = "none";
+      }
+      function load_canteen() {
+        var x = document.getElementById("accomadation_container");
+        var y = document.getElementById("ambulance_container");
+        var z = document.getElementById("canteen_container");
+        
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
